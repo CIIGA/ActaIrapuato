@@ -1,0 +1,128 @@
+@page {
+    margin: 0px;
+}
+header {
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    margin-bottom: 0.2cm;
+}
+.header_title {
+   
+    text-align: center;
+    
+  
+}
+.imgHeaderLeft {
+    float: left;
+    width: 2cm;
+    height: 2.1cm;
+    margin-left: 1cm;
+}
+.imgHeaderRigth {
+    float: right;
+    width: 1.4cm;
+    height: 1.5cm;
+    margin-right: 1cm;
+}
+.titleHeaderRigth {
+    position: absolute;
+    margin-top: 57px;
+    margin-right: -72px;
+    width: 2.3cm;
+    height: .6cm;
+    
+    float: right;
+}
+.letra1{
+    font-size: 12px;
+}
+
+
+.underline {
+    text-decoration: underline;
+}
+
+.title {
+    font-size: 14px;
+}
+.p-none-spacing {
+    margin: -2% 0;
+}
+body {
+    margin-top: 2.8cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-bottom: 2.4cm;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+}
+.text-justify {
+    text-align: justify;
+}
+.text-center {
+    text-align: center;
+}
+.bold {
+    font-weight: 800;
+    font-weight: bold !important;
+}
+.tableText {
+    border-collapse: collapse; /* Elimina los bordes entre las celdas */
+    width: 100%; /* Ancho de la tabla */
+}
+.tdText {
+    padding: 10px; /* Espaciado interno para las celdas */
+}
+.tdWhithe {
+    color: white;
+}
+.right {
+    margin-left: 30%;
+}
+
+.text-right {
+    text-align: right;
+}
+.p-cursive-right-left {
+    margin-left: 17%;
+    margin-right: 11%;
+}
+.text-azul {
+    color: blue !important;
+}
+.border-2 {
+    border: 2px solid #273746 !important;
+    border-collapse: collapse !important;
+}
+.transformacion1 {
+    text-transform: capitalize;
+}
+.mayuscula {
+    text-transform: uppercase;
+}
+.minuscula {
+    text-transform: lowercase;
+}
+.final {
+    font-size: 8px !important;
+}
+.table_letra{
+    font-size: 12px !important;
+    border-collapse: collapse !important;
+    border: none;
+}
+.component_bottom{
+    position: absolute;
+    bottom: 100px;
+    margin-right: 2.8cm;
+}
+.ContainTable{
+ margin: auto;
+}
+.borders {
+    border: 1px solid black; /* Borde de 1 píxel de grosor, color negro */
+}
+
