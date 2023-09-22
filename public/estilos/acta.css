@@ -1,0 +1,48 @@
+@page {
+    margin: 0px;
+}
+.underline {
+    text-decoration: underline;
+}
+body {
+    margin-top: 2cm;
+    margin-left: 1.5cm;
+    margin-right: 1.5cm;
+    margin-bottom: 2.4cm;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+}
+.titulo{
+    font-size: 14pt; 
+}
+.text-justify {
+    text-align: justify;
+}
+.text-center {
+    text-align: center;
+}
+.bold {
+    font-weight: 800;
+    font-weight: bold !important;
+}
+.tableText {
+    border-collapse: collapse; /* Elimina los bordes entre las celdas */
+    width: 100%; /* Ancho de la tabla */
+}
+.tdText {
+    padding: 10px; /* Espaciado interno para las celdas */
+}
+.tdWhithe {
+    color: white;
+}
+.text-right {
+    text-align: right;
+}
+.mayuscula {
+    text-transform: uppercase;
+}
+.minuscula {
+    text-transform: lowercase;
+}
+
+
