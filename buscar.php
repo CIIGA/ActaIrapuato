@@ -1,6 +1,7 @@
 <?php
 require 'include/cnx.php';
-$fechaI = date('Y-m-d', strtotime($_POST['fechaI'] . ' -1 day'));
+// $fechaI = date('Y-m-d', strtotime($_POST['fechaI'] . ' -1 day'));
+$fechaI = $_POST['fechaI'];
 $fechaF = date('Y-m-d', strtotime($_POST['fechaF'] . ' +1 day'));
 $sqlCantidadA = "SELECT count(*) as c FROM actaCircunstanciada WHERE fechaCaptura > ? and fechaCaptura < ?";
 $cnxCantidadA = sqlsrv_query($cnx, $sqlCantidadA, array($fechaI,$fechaF));

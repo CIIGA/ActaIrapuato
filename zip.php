@@ -8,7 +8,8 @@ $zip = new ZipArchive();
 $zipFilename = 'Actas Circunstanciadas.zip';
 $zip->open($zipFilename, ZipArchive::CREATE);
 require 'include/cnx.php';
-$fechaI = date('Y-m-d', strtotime($_GET['fechaI'] . ' -1 day'));
+// $fechaI = date('Y-m-d', strtotime($_GET['fechaI'] . ' -1 day'));
+$fechaI = $_GET['fechaI'];
 $fechaF = date('Y-m-d', strtotime($_GET['fechaF'] . ' +1 day'));
 $sqlActa = "SELECT cuenta,contribuyente,domicilio,DATEPART(HOUR, fechaCaptura) as hora, DATEPART(MINUTE, fechaCaptura) as minutos, DAY(fechaCaptura) as dia,
 format(fechaCaptura,'MMMM','es-es') as mes,YEAR(fechaCaptura) as anio,numOficio,numCarta,CaracteristicasDomicilio,constatado,personaReferencia,sexo,edad,estatura,complexion,
@@ -33,7 +34,7 @@ $cuenta=$Acta['cuenta'];
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Acta Circunstanciada</title>
-        <link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/ActaIrapuato/public/estilos/acta.css" rel="stylesheet">
+        <link href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/implementta/modulos/ActaIrapuato/public/estilos/acta.css" rel="stylesheet">
 
     </head>
 
